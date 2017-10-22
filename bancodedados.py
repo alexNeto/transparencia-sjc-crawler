@@ -71,6 +71,7 @@ class Banco:
                 acomulador_salario += float(salario)
                 contador_salario += 1
         return acomulador_salario / contador_salario
+     
         
         
         

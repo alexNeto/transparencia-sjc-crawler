@@ -4,70 +4,57 @@ import matplotlib.pyplot as plt
 from bancodedados import Banco
 
 
-
 class AppMan:
     """
     Classe para gerenciar todas as ações do programa
     """
+
     def __init__(self):
         self.banco = Banco()
-    
+
     def atualiza_raspagem(self):
         """
         Atualiza o json criado pelo banco de dados
         """
         self.banco.raspatudo()
 
-    def teste(self):
-        print(self.banco.separa_cargos())
-        cargos = self.banco.separa_cargos()
-        linhas = [ "Salário Base", 
-                    "Plano de Carreira",         
-                    "Gratificações",
-                    "Benefícios",
-                    "Abono",
-                    "Adiantamento Salarial",
-                    "Férias",
-                    "Décimo Terceiro",
-                    "Abatimento",
-                    "Descontos",
-                    "Salário Bruto",
-                    "Salário Líquido"]
-
-        for cargo in cargos:
-            for linha in linhas:
-                print(self.banco.pega_salario(cargo, linha))
+    def linhas(self):
+        linhas = ["Salário Base",
+                "Plano de Carreira",
+                "Gratificações",
+                "Benefícios",
+                "Abono",
+                "Adiantamento Salarial",
+                "Férias",
+                "Décimo Terceiro",
+                "Abatimento",
+                "Descontos",
+                "Salário Bruto",
+                "Salário Líquido"]
+        return linhas
+        
+    def dados(self):
+        coluna = []
+        for salario in self.linhas():
+            linha = []
+            for cargo in self.banco.separa_cargos():
+                linha.append(self.banco.pega_salario(cargo, salario))
+            coluna.append(linha)
+        return coluna
+        #print(len(coluna))
+        #print(len(self.banco.separa_cargos()))
+        #print(len(self.linhas()))
     
-
     def plota(self):
         """
         Método para plotar o gráfico de acordo com os dados coletados
         """
-        data = [[ 66386, 174296,  75131, 577908,  32015],
-                [ 58230, 381139,  78045,  99308, 160454],
-                [ 89135,  80552, 152558, 497981, 603535],
-                [ 78415,  81858, 150656, 193263,  69638],
-                [139361, 331509, 343164, 781380,  52269]]
+        data = self.dados()
+        columns = self.banco.separa_cargos()
+        rows =  self.linhas()
 
-
-        columns = (self.banco.separa_cargos())
-        linhas = [ "Salário Base", 
-                    "Plano de Carreira",         
-                    "Gratificações",
-                    "Benefícios",
-                    "Abono",
-                    "Adiantamento Salarial",
-                    "Férias",
-                    "Décimo Terceiro",
-                    "Abatimento",
-                    "Descontos",
-                    "Salário Bruto",
-                    "Salário Líquido"]
-
-        rows = ['%s' % x for x in linhas]
-
-        values = np.arange(0, 2500, 500)
-        value_increment = 1000
+        values = np.arange(0, 1000, 100)
+        value_increment = 100
 
         # Get some pastel shades for the colors
         colors = plt.cm.BuPu(np.linspace(0, 0.5, len(rows)))
