@@ -1,6 +1,8 @@
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
 
+from titulos import *
+
 
 class Raspagem:
     def __init__(self):
@@ -12,27 +14,9 @@ class Raspagem:
         self.nameList = self.bsObj.findAll("tr")
         self.data = self.bsObj.find("h5")
 
-    def __cabecalho(self):
-        titulo = ["Nome do Servidor",
-                  "Cargo",
-                  "Salário Base",
-                  "Plano de Carreira",
-                  "Gratificações",
-                  "Benefícios",
-                  "Abono",
-                  "Adiantamento Salarial",
-                  "Férias",
-                  "Décimo Terceiro",
-                  "Abatimento",
-                  "Descontos",
-                  "Salário Bruto",
-                  "Salário Líquido"
-                  ]
-        return titulo
-
     def raspatodos(self):
         dados = {}
-        titulo = self.__cabecalho()
+        titulo = cabecalho()
         j = 0
         for name in self.nameList:
             individual = {}

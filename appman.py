@@ -2,13 +2,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from bancodedados import Banco
+from titulos import *
 
 
 class AppMan:
-    """
+    '''
     Classe para gerenciar todas as ações do programa
-    """
-
+    '''
     def __init__(self):
         self.banco = Banco()
 
@@ -18,28 +18,12 @@ class AppMan:
         """
         self.banco.raspatudo()
 
-    def linhas(self):
-        """
-        Método contém os dados sobre o salário
-        """
-        linhas = ["Salário Base",
-                "Plano de Carreira",
-                "Gratificações",
-                "Benefícios",
-                "Abono",
-                "Adiantamento Salarial",
-                "Férias",
-                "Décimo Terceiro",
-                "Abatimento",
-                "Descontos",
-                "Salário Bruto",
-                "Salário Líquido"]
-        return linhas
+    
         
     def menu(self):
-        """
+        '''
         Método para mostrar um menu de todos os cargos 
-        """
+        '''
         cargos = []
         for i, cargo in enumerate(self.banco.separa_cargos()):
             menu = "{0} - {1}\n".format(i + 1, cargo)
@@ -48,26 +32,26 @@ class AppMan:
         return "".join(cargos)
 
     def dados(self, cargo):
-        """
+        '''
         Pega os dados salariais de determinado cargo
-        """       
+        '''       
         coluna = []
-        for salario in self.linhas():
+        for salario in linhas():
             linha = []
             linha.append(self.banco.pega_salario(cargo, salario))
             coluna.append(linha)
         return coluna
         
     def plota(self, cargo):
-        """
+        '''
         Método para plotar o gráfico de acordo com os dados coletados
-        """
+        '''
         cargos = self.banco.separa_cargos()
         cargos = cargos[cargo]
 
         data = self.dados(cargos)
         columns = [cargos]
-        rows = self.linhas()
+        rows = linhas()
 
         values = np.arange(0, 200, 100)
         value_increment = 100
