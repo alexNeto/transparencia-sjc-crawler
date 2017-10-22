@@ -18,6 +18,27 @@ class AppMan:
         """
         self.banco.raspatudo()
 
+    def teste(self):
+        print(self.banco.separa_cargos())
+        cargos = self.banco.separa_cargos()
+        linhas = [ "Salário Base", 
+                    "Plano de Carreira",         
+                    "Gratificações",
+                    "Benefícios",
+                    "Abono",
+                    "Adiantamento Salarial",
+                    "Férias",
+                    "Décimo Terceiro",
+                    "Abatimento",
+                    "Descontos",
+                    "Salário Bruto",
+                    "Salário Líquido"]
+
+        for cargo in cargos:
+            for linha in linhas:
+                print(self.banco.pega_salario(cargo, linha))
+    
+
     def plota(self):
         """
         Método para plotar o gráfico de acordo com os dados coletados
@@ -30,7 +51,20 @@ class AppMan:
 
 
         columns = (self.banco.separa_cargos())
-        rows = ['%d year' % x for x in (100, 50, 20, 10, 5)]
+        linhas = [ "Salário Base", 
+                    "Plano de Carreira",         
+                    "Gratificações",
+                    "Benefícios",
+                    "Abono",
+                    "Adiantamento Salarial",
+                    "Férias",
+                    "Décimo Terceiro",
+                    "Abatimento",
+                    "Descontos",
+                    "Salário Bruto",
+                    "Salário Líquido"]
+
+        rows = ['%s' % x for x in linhas]
 
         values = np.arange(0, 2500, 500)
         value_increment = 1000

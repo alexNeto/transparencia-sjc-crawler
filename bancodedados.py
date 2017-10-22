@@ -41,49 +41,36 @@ class Banco:
         """
         Separa todos os cargos registrado na prefeitura
         """
-        with open(self.nome_arquivo()) as data_file:  
-            data = json.load(data_file)
-        cargos = []
-        
+        valor = []
+        data = self.acessa_json()
         for key in data:
             if key == "0":
                 continue
-            if data[key]["Cargo"] not in cargos:
-                cargos.append(data[key]["Cargo"])
+            if data[key]["Cargo"] not in valor:
+                valor.append(data[key]["Cargo"])
         
-        return cargos
-
-    def salario_base(self, nome_cargo):
+        return valor
         
-    def plano_carreira(self, nome_caro):
-        
-    def gratificacao(self, nome_cargo):
-        
-    def beneficios(self, nome_cargo):
-        
-    def abono(self, nome_cargo):
-        
-    def adiantamento_salarial(self, nome_cargo):
-        
-    def ferias(self, nome_cargo):
-        
-    def decimo_terceiro(self, nome_cargo):
-        
-    def abatimento(self, nome_cargo):
-        
-    def descontos(self, nome_cargo):
-    
-    def salario_bruto(self, nome_cargo):
-    
-    def salario_liquido(self, nome_cargo):
-        
-    def paga_salario(self, nome_cargo):
-        """
-        returna dados do salario de acordo com o cargo 
-        desejado
-        """
-         with open(self.nome_arquivo()) as data_file:  
+    def acessa_json(self):
+        with open(self.nome_arquivo()) as data_file:  
             data = json.load(data_file)
-        salario = []
 
+        return data
 
+    def pega_salario(self, nome_cargo, tipo_salario):
+        acomulador_salario = 0
+        contador_salario = 0
+        data = self.acessa_json()
+        for key in data:
+            if key == "0":
+                continue
+            if data[key]["Cargo"] == nome_cargo:
+                salario = data[key][tipo_salario]
+                salario = salario.replace(".", "")
+                salario = salario.replace(",", ".")
+                acomulador_salario += float(salario)
+                contador_salario += 1
+        return acomulador_salario / contador_salario
+        
+        
+        
