@@ -88,11 +88,11 @@ class AppMan:
         colors = colors[::-1]
         cell_text.reverse()
 
-        the_table = plt.table(cellText=cell_text,
-                              rowLabels=rows,
-                              rowColours=colors,
-                              colLabels=columns,
-                              loc='bottom')
+        plt.table(cellText=cell_text,
+            rowLabels=rows,
+            rowColours=colors,
+            colLabels=columns,
+            loc='bottom')
 
         plt.subplots_adjust(left=0.2, bottom=0.2)
 

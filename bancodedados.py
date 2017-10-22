@@ -1,6 +1,5 @@
 import json
 
-from pprint import pprint
 from raspagem import Raspagem
 
 
