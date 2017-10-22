@@ -47,17 +47,24 @@ class Banco:
             if key == "0":
                 continue
             if data[key]["Cargo"] not in valor:
-                valor.append(data[key]["Cargo"])
-        
+                valor.append(data[key]["Cargo"]) 
         return valor
         
     def acessa_json(self):
+        """
+        Método opara acessar o json salvo
+        """
         with open(self.nome_arquivo()) as data_file:  
             data = json.load(data_file)
 
         return data
 
     def pega_salario(self, nome_cargo, tipo_salario):
+        """
+        Método para pegar o salario de determinado cargo e 
+        formatá-lo para float
+        retorna a média deles
+        """
         acomulador_salario = 0
         contador_salario = 0
         data = self.acessa_json()
@@ -70,7 +77,10 @@ class Banco:
                 salario = salario.replace(",", ".")
                 acomulador_salario += float(salario)
                 contador_salario += 1
-        return acomulador_salario / contador_salario
+        if contador_salario == 0:
+            return 0
+        else:
+            return acomulador_salario / contador_salario * 100
      
         
         
