@@ -1,8 +1,6 @@
 from urllib import urlopen
 from bs4 import BeautifulSoup
 
-from titulos import *
-
 
 class Raspagem:
     def __init__(self):

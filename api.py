@@ -1,3 +1,7 @@
+import sys
+sys.path.insert(0, './commons')
+sys.path.insert(0, './crawlers')
+
 from flask import Flask
 from flask_restful import Resource, Api
 
@@ -11,10 +15,8 @@ class Index(Resource):
     def get(self):
         return ""
 
-
-
 api.add_resource(Index, '/')
-api.add_resource(Headers, '/headers/<string:type>')
+api.add_resource(Headers, '/headers/<string:header_type>')
 
 if __name__ == '__main__':
     app.run(debug=False)

@@ -6,12 +6,12 @@ api = Api(app)
 
 class Headers(Resource):
     @classmethod
-    def get(self, type):
-        if type == 'salarystuff':
+    def get(self, header_type):
+        if header_type == 'salarystuff':
             return salary_stuff()
-        elif type == 'role':
+        elif header_type == 'role':
             return role()
-        elif type == 'cityname':
+        elif header_type == 'cityname':
             return city_name()
 
 def salary_stuff():
