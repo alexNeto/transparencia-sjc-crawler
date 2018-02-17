@@ -5,6 +5,7 @@ app = Flask(__name__)
 api = Api(app)
 
 class Headers(Resource):
+    @classmethod
     def get(self, type):
         if type == 'salarystuff':
             return salary_stuff()
@@ -43,8 +44,8 @@ def role():
               "Descontos",
               "Salário Bruto",
               "Salário Líquido"]
-    return titulo
+    return {"role": titulo}
 
 def city_name():
-    return "São José dos Campos"
+    return {"city_name": "São José dos Campos"}
 
