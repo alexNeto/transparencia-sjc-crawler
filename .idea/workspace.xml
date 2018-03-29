@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63b90573-d6c0-4a7d-8005-2d4703ef348a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/commons/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/municipal_chamber_salary/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/municipal_chamber_salary/controller/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/municipal_chamber_salary/crawler/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/municipal_chamber_salary/repository/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commons/headers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/commons/headers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawlers/municipal_chamber_salary.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/municipal_chamber_salary/crawler/municipal_chamber_salary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +17,8 @@
       <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state relative-caret-position="425">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -34,16 +26,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="appman.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appman.py">
+      <file leaf-file-name="database.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database.sql">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="municipal_chamber_salary.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/municipal_chamber_salary/crawler/municipal_chamber_salary.py">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="municipal_chamber_salary_crawler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/municipal_chamber_salary/crawler/municipal_chamber_salary_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -51,11 +52,42 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="municipal_chamber_salary_repository.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/municipal_chamber_salary/repository/municipal_chamber_salary_repository.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="municipal_chamber_salary_controller.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/municipal_chamber_salary/controller/municipal_chamber_salary_controller.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="headers_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/commons/headers_test.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="municipal_chamber_salary_controller_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/municipal_chamber_salary_test/controller_test/municipal_chamber_salary_controller_test.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="municipal_chamber_salary_crawler_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/municipal_chamber_salary_test/crawler_test/municipal_chamber_salary_crawler_test.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="municipal_chamber_salary_repository_test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/municipal_chamber_salary_test/repository_test/municipal_chamber_salary_repository_test.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Unit Test" />
         <option value="Python Script" />
       </list>
     </option>
@@ -68,6 +100,12 @@
       <list>
         <option value="$PROJECT_DIR$/api.py" />
         <option value="$PROJECT_DIR$/app/api.py" />
+        <option value="$PROJECT_DIR$/app/municipal_chamber_salary/repository/municipal_chamber_salary_repository.py" />
+        <option value="$PROJECT_DIR$/app/municipal_chamber_salary/controller/municipal_chamber_salary_controller.py" />
+        <option value="$PROJECT_DIR$/test/commons/headers_test.py" />
+        <option value="$PROJECT_DIR$/test/municipal_chamber_salary_test/controller_test/municipal_chamber_salary_controller_test.py" />
+        <option value="$PROJECT_DIR$/test/municipal_chamber_salary_test/crawler_test/municipal_chamber_salary_crawler_test.py" />
+        <option value="$PROJECT_DIR$/test/municipal_chamber_salary_test/repository_test/municipal_chamber_salary_repository_test.py" />
       </list>
     </option>
   </component>
@@ -100,12 +138,6 @@
               <item name="camara-salario-sjc-back" type="b2602c69:ProjectViewProjectNode" />
               <item name="camara-salario-sjc-back" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="commons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="camara-salario-sjc-back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="camara-salario-sjc-back" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="municipal_chamber_salary" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -114,6 +146,13 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="municipal_chamber_salary" type="462c0819:PsiDirectoryNode" />
               <item name="crawler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="camara-salario-sjc-back" type="b2602c69:ProjectViewProjectNode" />
+              <item name="camara-salario-sjc-back" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="municipal_chamber_salary" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -193,7 +232,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32958034" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" weight="0.32914045" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.32914045" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18656716" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="right" id="R Graphics" order="3" />
@@ -217,26 +256,54 @@
     <entry file="file://$PROJECT_DIR$/appman.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/municipal_chamber_salary/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/municipal_chamber_salary/crawler/municipal_chamber_salary_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/municipal_chamber_salary/repository/municipal_chamber_salary_repository.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/municipal_chamber_salary/controller/municipal_chamber_salary_controller.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/commons/headers_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/municipal_chamber_salary_test/controller_test/municipal_chamber_salary_controller_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/municipal_chamber_salary_test/crawler_test/municipal_chamber_salary_crawler_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/municipal_chamber_salary_test/repository_test/municipal_chamber_salary_repository_test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/municipal_chamber_salary/__init__.py">
+    <entry file="file://$PROJECT_DIR$/database.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/municipal_chamber_salary/crawler/municipal_chamber_salary.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
