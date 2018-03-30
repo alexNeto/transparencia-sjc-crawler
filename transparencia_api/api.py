@@ -2,6 +2,8 @@ from flask import Flask
 from flask_restful import Resource, Api
 
 from transparencia_api.commons.database_communication import DatabaseCommunication
+from transparencia_api.salario_camara_municipal.controller.salario_camara_municipal_controller import \
+    SalarioCamaraMunicipalController
 
 app = Flask(__name__)
 api = Api(app)
@@ -14,7 +16,11 @@ class Index(Resource):
         return ""
 
 
+# root
 api.add_resource(Index, '/')
+
+# salario camara municipal
+api.add_resource(SalarioCamaraMunicipalController, '/salario_camara_municipal')
 
 if __name__ == '__main__':
     app.run(debug=True)
