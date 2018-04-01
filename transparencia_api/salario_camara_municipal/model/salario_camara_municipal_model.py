@@ -1,4 +1,4 @@
-from transparencia_api.commons.crawler.remuneracao_camara_crawler import RemuneracaoCamaraCrawler
+from transparencia_api.crawler.remuneracao_camara.remuneracao_camara_crawler import RemuneracaoCamaraCrawler
 
 
 class SalarioCamaraMunicipalModel:

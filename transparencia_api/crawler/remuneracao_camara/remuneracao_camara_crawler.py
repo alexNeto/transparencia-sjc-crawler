@@ -10,25 +10,6 @@ class RemuneracaoCamaraCrawler:
             "index.php?consulta=../lei_acesso/lai_remuneracoes")
         self.target = BeautifulSoup(self.html, "html.parser")
 
-    # def raspatodos(self):
-    #     dados = {}
-    #     titulo = cabecalho()
-    #     j = 0
-    #     for name in self.nameList:
-    #         individual = {}
-    #         i = 0
-    #         for n in name:
-    #             if "" not in n:
-    #                 try:
-    #                     individual[titulo[i]] = n.getText()
-    #                     i += 1
-    #                 except IndexError:
-    #                     i += 1
-    #                     continue
-    #         dados[j] = individual
-    #         j += 1
-    #     return dados
-
     def get_data(self):
         return self.target.find("tbody").getText()
 

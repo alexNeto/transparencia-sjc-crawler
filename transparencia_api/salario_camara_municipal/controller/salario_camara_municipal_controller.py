@@ -14,4 +14,3 @@ class SalarioCamaraMunicipalController(Resource):
 
     def get(self):
         return self.salario_camara_municipal.get_data()
-
