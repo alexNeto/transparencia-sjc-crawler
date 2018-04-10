@@ -4,11 +4,11 @@ from transparencia_api.commons.database_communication import DatabaseCommunicati
 
 class RemuneracaoCamaraDatabaseUpdater:
     def __init__(self):
-        self.__db = DatabaseCommunication().connect()
-        self.__meta = MetaData()
+        self.__db = DatabaseCommunication()
+        self.__db.connect()
 
         self.__salario_camara_municipal = \
-            Table('salario_camara_municipal', self.__meta,
+            Table('salario_camara_municipal', self.__db.meta,
                   Column('salario_camara_municipal_id', Integer, Sequence('salario_camara_municipal_id_seq'),
                          primary_key=True),
                   Column('salario_base', Numeric),
@@ -26,18 +26,18 @@ class RemuneracaoCamaraDatabaseUpdater:
                   )
 
         self.__cargo_reposirtory = \
-            Table('cargo', self.__meta,
+            Table('cargo', self.__db.meta,
                   Column('cargo_id', Integer, Sequence('cargo_id_seq'), primary_key=True),
                   Column('cargo', String)
                   )
 
         self.__data = \
-            Table('date', self.__meta,
+            Table('date', self.__db.meta,
                   Column('date_id', Integer, Sequence('date_id_seq'), primary_key=True),
                   Column('date', String))
 
         self.__funcionario_publico = \
-            Table('funcionario_publico', self.__meta,
+            Table('funcionario_publico', self.__db.meta,
                   Column('funcionario_publico_id', Integer, Sequence('funcionario_publico_id_seq'), primary_key=True),
                   Column('cargo_id', Integer, ForeignKey('cargo.cargo_id')),
                   Column('dado_salario_id', Integer, ForeignKey('dado_salario.dado_salario_id')),
