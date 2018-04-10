@@ -71,14 +71,13 @@ class RemuneracaoCamaraDatabaseUpdater:
         funcionario_clause = self.funcionario_publico \
             .insert().values(cargo_id=funcionario_field.cargo_id,
                              dado_salario_id=funcionario_field.dado_salario,
-                             data_id=funcionario_field.data_id,
+                             date_id=funcionario_field.data_id,
                              nome=funcionario_field.nome)
         result = self.db.execute(funcionario_clause)
         return result.inserted_primary_key
 
     def create_date(self, date):
         data_clause = self.funcionario_publico \
-            .insert().values(date=date.data,
-                             funcionario_publico_id=date.funcionario_publico_id)
+            .insert().values(date=date.data)
         result = self.db.execute(data_clause)
         return result.inserted_primary_key

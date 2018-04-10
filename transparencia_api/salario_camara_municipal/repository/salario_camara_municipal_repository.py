@@ -91,7 +91,7 @@ class SalarioCamaraMunicipalRepository:
         return self.__descontos
 
     @descontos.setter
-    def plano_carreira(self, value):
+    def descontos(self, value):
         self.__descontos = value
 
     @property
