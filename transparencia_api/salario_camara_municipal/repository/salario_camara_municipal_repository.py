@@ -20,7 +20,7 @@ class SalarioCamaraMunicipalRepository:
 
     @salario_base.setter
     def salario_base(self, value):
-        self.salario_base = value
+        self.__salario_base = value
 
     @property
     def plano_carreira(self):

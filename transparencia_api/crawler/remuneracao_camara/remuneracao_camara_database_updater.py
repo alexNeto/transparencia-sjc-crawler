@@ -1,13 +1,14 @@
-from sqlalchemy import Table, Column, Integer, Sequence, Numeric, String, ForeignKey
+from sqlalchemy import Table, Column, Integer, Sequence, Numeric, String, ForeignKey, MetaData
 from transparencia_api.commons.database_communication import DatabaseCommunication
 
 
 class RemuneracaoCamaraDatabaseUpdater:
     def __init__(self):
-        self.db = DatabaseCommunication().connect()
+        self.__db = DatabaseCommunication().connect()
+        self.__meta = MetaData()
 
-        self.salario_camara_municipal = \
-            Table('salario_camara_municipal', self.db.meta,
+        self.__salario_camara_municipal = \
+            Table('salario_camara_municipal', self.__meta,
                   Column('salario_camara_municipal_id', Integer, Sequence('salario_camara_municipal_id_seq'),
                          primary_key=True),
                   Column('salario_base', Numeric),
@@ -24,19 +25,19 @@ class RemuneracaoCamaraDatabaseUpdater:
                   Column('salario_liquido', Numeric)
                   )
 
-        self.cargo_reposirtory = \
-            Table('cargo', self.db.meta,
+        self.__cargo_reposirtory = \
+            Table('cargo', self.__meta,
                   Column('cargo_id', Integer, Sequence('cargo_id_seq'), primary_key=True),
                   Column('cargo', String)
                   )
 
-        self.data = \
-            Table('date', self.db.meta,
-                  Column('date_id', Integer, primary_key=True),
+        self.__data = \
+            Table('date', self.__meta,
+                  Column('date_id', Integer, Sequence('date_id_seq'), primary_key=True),
                   Column('date', String))
 
-        self.funcionario_publico = \
-            Table('funcionario_publico', self.db.meta,
+        self.__funcionario_publico = \
+            Table('funcionario_publico', self.__meta,
                   Column('funcionario_publico_id', Integer, Sequence('funcionario_publico_id_seq'), primary_key=True),
                   Column('cargo_id', Integer, ForeignKey('cargo.cargo_id')),
                   Column('dado_salario_id', Integer, ForeignKey('dado_salario.dado_salario_id')),
@@ -45,7 +46,7 @@ class RemuneracaoCamaraDatabaseUpdater:
                   )
 
     def create_dados_remuneracao(self, remuneracao_field):
-        remuneracao_clause = self.salario_camara_municipal \
+        remuneracao_clause = self.__salario_camara_municipal \
             .insert().values(salario_base=remuneracao_field.salario_base,
                              plano_carreira=remuneracao_field.plano_carreira,
                              gratificacoes=remuneracao_field.gratificacoes,
@@ -58,26 +59,26 @@ class RemuneracaoCamaraDatabaseUpdater:
                              descontos=remuneracao_field.descontos,
                              salario_bruto=remuneracao_field.salario_bruto,
                              salario_liquido=remuneracao_field.salario_liquido)
-        result = self.db.execute(remuneracao_clause)
+        result = self.__db.execute(remuneracao_clause)
         return result.inserted_primary_key
 
     def create_dados_cargos(self, cargo_field):
-        cargo_clause = self.cargo_reposirtory \
+        cargo_clause = self.__cargo_reposirtory \
             .insert().values(cargo=cargo_field.cargo)
-        result = self.db.execute(cargo_clause)
+        result = self.__db.execute(cargo_clause)
         return result.inserted_primary_key
 
     def create_dados_funcionario(self, funcionario_field):
-        funcionario_clause = self.funcionario_publico \
+        funcionario_clause = self.__funcionario_publico \
             .insert().values(cargo_id=funcionario_field.cargo_id,
                              dado_salario_id=funcionario_field.dado_salario,
                              date_id=funcionario_field.data_id,
                              nome=funcionario_field.nome)
-        result = self.db.execute(funcionario_clause)
+        result = self.__db.execute(funcionario_clause)
         return result.inserted_primary_key
 
     def create_date(self, date):
-        data_clause = self.funcionario_publico \
+        data_clause = self.__funcionario_publico \
             .insert().values(date=date.data)
-        result = self.db.execute(data_clause)
+        result = self.__db.execute(data_clause)
         return result.inserted_primary_key

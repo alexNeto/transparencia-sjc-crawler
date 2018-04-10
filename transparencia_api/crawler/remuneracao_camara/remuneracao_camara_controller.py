@@ -13,4 +13,4 @@ class RemuneracaoCamaraCotroller(Resource):
         self.remuneracao_camara_municial = RemuneracaoCamaraModel()
 
     def get(self):
-        return self.remuneracao_camara_municial.split_data_set()
+        return self.remuneracao_camara_municial.update_database()
