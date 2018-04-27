@@ -7,43 +7,6 @@ class RemuneracaoCamaraDatabaseUpdater:
         self.__db = DatabaseCommunication()
         self.__db.connect()
 
-        self.__salario_camara_municipal = \
-            Table('salario_camara_municipal', self.__db.meta,
-                  Column('salario_camara_municipal_id', Integer, Sequence('salario_camara_municipal_id_seq'),
-                         primary_key=True),
-                  Column('salario_base', Numeric),
-                  Column('plano_carreira', Numeric),
-                  Column('gratificacoes', Numeric),
-                  Column('beneficios', Numeric),
-                  Column('abono', Numeric),
-                  Column('adiantamento_salarial', Numeric),
-                  Column('ferias', Numeric),
-                  Column('decimo_terceiro', Numeric),
-                  Column('abatimento_de_teto', Numeric),
-                  Column('descontos', Numeric),
-                  Column('salario_bruto', Numeric),
-                  Column('salario_liquido', Numeric)
-                  )
-
-        self.__cargo_reposirtory = \
-            Table('cargo', self.__db.meta,
-                  Column('cargo_id', Integer, Sequence('cargo_id_seq'), primary_key=True),
-                  Column('cargo', String)
-                  )
-
-        self.__data = \
-            Table('date', self.__db.meta,
-                  Column('date_id', Integer, Sequence('date_id_seq'), primary_key=True),
-                  Column('date', String))
-
-        self.__funcionario_publico = \
-            Table('funcionario_publico', self.__db.meta,
-                  Column('funcionario_publico_id', Integer, Sequence('funcionario_publico_id_seq'), primary_key=True),
-                  Column('cargo_id', Integer, ForeignKey('cargo.cargo_id')),
-                  Column('dado_salario_id', Integer, ForeignKey('dado_salario.dado_salario_id')),
-                  Column('date_id', Integer, ForeignKey('date.date_id')),
-                  Column('nome', String)
-                  )
 
     def create_dados_remuneracao(self, remuneracao_field):
         remuneracao_clause = self.__salario_camara_municipal \
