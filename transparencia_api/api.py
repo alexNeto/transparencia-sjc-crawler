@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_restful import Resource, Api
+from flask_cors import CORS
 from transparencia_api.crawler.remuneracao_camara.remuneracao_camara_controller import RemuneracaoCamaraCotroller
 from transparencia_api.salario_camara_municipal.controller.salario_camara_municipal_controller import \
     SalarioCamaraMunicipalController
@@ -22,13 +23,29 @@ class App:
 class Index(Resource):
     @classmethod
     def get(cls):
-        return ""
+        return [{
+            "nome": 'ABEL YOSHINOBU TAIRA',
+            "cargo": 'ANALISTA TEC.LEG-DESIGNER GRAFICO',
+            "salario_base": 5021.76,
+            "plano_carreira": 150.65,
+            "gratificacao": 1044.35,
+            "beneficio": 374.00,
+            "abono": 0.00,
+            "adiantamento": 0.00,
+            "ferias": 0.00,
+            "decimo_terceiro": 0.00,
+            "abatimento": 0.00,
+            "descontos": 2702.60,
+            "salario_bruto": 6590.76,
+            "salario_liquido": 3888.16
+        }]
 
 
 app_instance = App()
 
 app = app_instance.app
 api = app_instance.api
+CORS(app)
 
 # root
 api.add_resource(Index, '/')
