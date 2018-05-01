@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='transparencia-sjc-back',
+    name='transparencia-sjc-crawler',
     version='0.0.0',
-    url='https://github.com/alexNeto/transparencia-sjc-back',
+    url='https://github.com/alexNeto/transparencia-sjc-crawler',
     license='MIT License',
     author='Alexandre Neto',
     author_email='alex.neto3@hotmail.com',

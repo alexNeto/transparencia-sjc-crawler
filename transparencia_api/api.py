@@ -2,8 +2,7 @@ from flask import Flask
 from flask_cors import CORS
 from flask_restful import Resource, Api
 
-from transparencia_api.salario_camara_municipal.controller.salario_camara_municipal_controller import \
-    SalarioCamaraMunicipalController
+from transparencia_api.crawler.remuneracao_camara.remuneracao_camara_controller import RemuneracaoCamaraCotroller
 
 
 class App:
@@ -51,7 +50,7 @@ CORS(app)
 api.add_resource(Index, '/')
 
 # salario camara municipal
-api.add_resource(SalarioCamaraMunicipalController, '/salario_camara_municipal')
+api.add_resource(RemuneracaoCamaraCotroller, '/salario_camara_municipal')
 
 if __name__ == '__main__':
     app.run(debug=True)

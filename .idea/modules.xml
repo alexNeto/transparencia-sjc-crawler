@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/camara-salario-sjc-back.iml" filepath="$PROJECT_DIR$/.idea/camara-salario-sjc-back.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/transparencia-sjc-crawler.iml" filepath="$PROJECT_DIR$/.idea/transparencia-sjc-crawler.iml" />
     </modules>
   </component>
 </project>
