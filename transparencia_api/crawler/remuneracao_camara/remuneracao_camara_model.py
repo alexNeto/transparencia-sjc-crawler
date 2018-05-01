@@ -14,7 +14,7 @@ class RemuneracaoCamaraModel:
         for individuo in splited_data:
             dados_individuais.append(individuo.split('\n'))
         self.__data = dados_individuais
-        return "done"
+        return dados_individuais
 
     def get_date(self):
         return self.__data_set.get_date()
