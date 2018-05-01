@@ -15,7 +15,6 @@ pycairo==1.15.3
 reportlab==3.4.0
 scour==0.35
 six==1.11.0
-uniconvertor==2.0
 vboxapi==1.0
 virtualenv==15.1.0
 webencodings==0.5.1
