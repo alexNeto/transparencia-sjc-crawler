@@ -25,12 +25,15 @@ class RemuneracaoCamaraModel:
         for individuo in splited_data:
             dados_individuais.append(individuo.split('\n'))
         self.__data = dados_individuais
+        return "done"
 
     def set_date(self):
         self.__date = self.__data_set.get_date()
+        return "done"
 
     def set_cargo(self, data):
         self.__cargo.cargo = data[1]
+        return "done"
 
     def set_salario_camara_municipal(self, data):
         self.__salario_camara_municipal.salario_base = to_float(data[2])
@@ -45,12 +48,14 @@ class RemuneracaoCamaraModel:
         self.__salario_camara_municipal.descontos = to_float(data[11])
         self.__salario_camara_municipal.salario_bruto = to_float(data[12])
         self.__salario_camara_municipal.salario_liquido = to_float(data[13])
+        return "done"
 
     def set_funcionario_publico(self, data, date_id, cargo_id, dado_salario_id):
         self.__funcionario_publico.date_id = date_id
         self.__funcionario_publico.cargo_id = cargo_id
         self.__funcionario_publico.dado_salario_id = dado_salario_id
         self.__funcionario_publico.nome = data[0]
+        return "done"
 
     def update_database(self):
         self.split_data_set()
