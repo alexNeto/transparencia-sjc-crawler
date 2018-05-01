@@ -1,8 +1,15 @@
 language: python
+
 python:
-  "3.6"
-virtualenv:
-  system_site_packages: true
+  - "3.6"
+
+sudo: required
 
 install:
-  - pip install -r requirements.txt
+  - pip install coveralls
+
+script:
+  - coverage run --source=transparencia_back_token_coveralls setup.py test
+
+after_success:
+  - coveralls

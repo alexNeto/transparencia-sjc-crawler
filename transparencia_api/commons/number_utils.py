@@ -1,2 +1,2 @@
-def to_float(str):
-    return float(str.replace('.', '').replace(',', '.'))
+def to_float(float_string):
+    return float(float_string.replace('.', '').replace(',', '.'))
