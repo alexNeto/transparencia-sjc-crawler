@@ -11,7 +11,6 @@ from transparencia_api.salario_camara_municipal.repository.salario_camara_munici
 
 
 class RemuneracaoCamaraModel:
-
     def __init__(self):
         self.__data_set = RemuneracaoCamaraCrawler()
         # Cargo
@@ -76,4 +75,4 @@ class RemuneracaoCamaraModel:
             date_id = self.__salario_camara_municipal_storage.create_date(self.__date)
             self.set_funcionario_publico(item, [date_id, cargo_id, dado_salario_id])
             self.__funcionario_publico_storage.create_dados_funcionario(self.__funcionario_publico)
-        return "done"
+        return self.__data

@@ -1,7 +1,12 @@
 class CargoRepository:
 
     def __init__(self):
-        self.cargo = None
+        self.__cargo = None
 
-    def set_cargo(self, cargo):
-        self.cargo = cargo
+    @property
+    def cargo(self):
+        return self.__cargo
+
+    @cargo.setter
+    def cargo(self, value):
+        self.__cargo = value

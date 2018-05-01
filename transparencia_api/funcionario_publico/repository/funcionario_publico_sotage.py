@@ -1,5 +1,4 @@
-from transparencia_api.commons.database_communication import DatabaseCommunication
-from transparencia_api.commons.database_defenition import FuncionarioPublicoTable
+from transparencia_api.commons.database_communication import DatabaseCommunication, FuncionarioPublicoTable
 
 
 class FuncionarioPublicoStorage:
@@ -16,3 +15,7 @@ class FuncionarioPublicoStorage:
                              nome=funcionario_field.nome)
         result = self.__db.connection.execute(funcionario_clause)
         return result.inserted_primary_key
+
+    def retrieve_dados_funcionario(self):
+        select_statement = self.__funcionario_publico_table.JobStatus.__table__.columns()
+        return self.__db.connection.execute(select_statement)

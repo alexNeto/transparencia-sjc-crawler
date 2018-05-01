@@ -1,5 +1,4 @@
-from transparencia_api.commons.database_communication import DatabaseCommunication
-from transparencia_api.commons.database_defenition import CargoTable
+from transparencia_api.commons.database_communication import DatabaseCommunication, CargoTable, session
 
 
 class CargoStorage:
@@ -9,7 +8,9 @@ class CargoStorage:
         self.__cargo_table = CargoTable
 
     def create_dados_cargos(self, cargo_field):
-        cargo_clause = self.__cargo_table \
-            .insert().values(cargo=cargo_field.cargo)
-        result = self.__db.connection.execute(cargo_clause)
-        return result.inserted_primary_key
+        session.add(cargo_field)
+        session.commit()
+
+    def retrieve_dados_cargos(self):
+        select_statement = self.__cargo_table.select()
+        return self.__db.connection.execute(select_statement)
