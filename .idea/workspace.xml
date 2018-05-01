@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63b90573-d6c0-4a7d-8005-2d4703ef348a" name="Default" comment="" />
+    <list default="true" id="63b90573-d6c0-4a7d-8005-2d4703ef348a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/transparencia_api/commons/database_defenition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transparencia_api/funcionario_publico/repository/funcionario_publico_sotage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transparencia_api/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/transparencia_api/api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transparencia_api/commons/database_communication.py" beforeDir="false" afterPath="$PROJECT_DIR$/transparencia_api/commons/database_communication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_crawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_crawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_database_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_database_updater.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_database_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/transparencia_api/cargo/repository/cargo_storage.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,76 +22,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cargo_repository.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/transparencia_api/cargo/repository/cargo_repository.py">
+      <file leaf-file-name="database_defenition.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transparencia_api/commons/database_defenition.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database_communication.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/transparencia_api/commons/database_communication.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="200">
+              <caret line="33" column="15" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="15" />
               <folding>
-                <element signature="e#0#92#0" expanded="true" />
+                <element signature="e#0#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remuneracao_camara_model_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/crawler_test/remuneracao_camara/remuneracao_camara_model_test.py">
+      <file leaf-file-name="cargo_storage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transparencia_api/cargo/repository/cargo_storage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
+            <state relative-caret-position="170">
+              <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
               <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#0#82#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/transparencia_api/api.py">
+      <file leaf-file-name="funcionario_publico_sotage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transparencia_api/funcionario_publico/repository/funcionario_publico_sotage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#0#82#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <file leaf-file-name="remuneracao_camara_database_updater.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_database_updater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="136">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <file leaf-file-name="salario_camara_municipal_repository.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_repository.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="34">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remuneracao_camara_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_model.py">
+      <file leaf-file-name="salario_camara_municipal_storage.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_storage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
+            <state relative-caret-position="472">
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
               <folding>
-                <element signature="e#0#79#0" expanded="true" />
+                <element signature="e#0#82#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,13 +136,9 @@
         <option value="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_converter.py" />
         <option value="$PROJECT_DIR$/transparencia_api/cargo/repository/cargo_repository.py" />
         <option value="$PROJECT_DIR$/transparencia_api/funcionario_publico/repository/funcionario_publico_repository.py" />
-        <option value="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_controller.py" />
         <option value="$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_repository.py" />
         <option value="$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_database_model.py" />
         <option value="$PROJECT_DIR$/setembro2017.json" />
-        <option value="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_database_updater.py" />
-        <option value="$PROJECT_DIR$/transparencia_api/commons/database_communication.py" />
-        <option value="$PROJECT_DIR$/transparencia_api/api.py" />
         <option value="$PROJECT_DIR$/transparencia_api/salario_camara_municipal/model/salario_camara_municipal_model.py" />
         <option value="$PROJECT_DIR$/test/commons/number_utils_test.py" />
         <option value="$PROJECT_DIR$/transparencia_api/commons/number_utils.py" />
@@ -148,8 +146,17 @@
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/test/crawler_test/remuneracao_camara/remuneracao_camara_model_test.py" />
         <option value="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_model.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/transparencia_api/commons/database_defenition.py" />
+        <option value="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_crawler.py" />
+        <option value="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_controller.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/transparencia_api/commons/database_communication.py" />
+        <option value="$PROJECT_DIR$/transparencia_api/api.py" />
+        <option value="$PROJECT_DIR$/transparencia_api/cargo/repository/cargo_storage.py" />
+        <option value="$PROJECT_DIR$/transparencia_api/funcionario_publico/repository/funcionario_publico_sotage.py" />
+        <option value="$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_database_updater.py" />
+        <option value="$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_storage.py" />
       </list>
     </option>
   </component>
@@ -177,50 +184,40 @@
             <path>
               <item name="transparencia-sjc-back" type="b2602c69:ProjectViewProjectNode" />
               <item name="transparencia-sjc-back" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="transparencia_api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="transparencia-sjc-back" type="b2602c69:ProjectViewProjectNode" />
               <item name="transparencia-sjc-back" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="transparencia_api" type="462c0819:PsiDirectoryNode" />
               <item name="commons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="transparencia-sjc-back" type="b2602c69:ProjectViewProjectNode" />
               <item name="transparencia-sjc-back" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transparencia-sjc-back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transparencia-sjc-back" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler_test" type="462c0819:PsiDirectoryNode" />
-              <item name="remuneracao_camara" type="462c0819:PsiDirectoryNode" />
+              <item name="transparencia_api" type="462c0819:PsiDirectoryNode" />
+              <item name="salario_camara_municipal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="transparencia-sjc-back" type="b2602c69:ProjectViewProjectNode" />
               <item name="transparencia-sjc-back" type="462c0819:PsiDirectoryNode" />
               <item name="transparencia_api" type="462c0819:PsiDirectoryNode" />
+              <item name="salario_camara_municipal" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="transparencia-sjc-back" type="b2602c69:ProjectViewProjectNode" />
               <item name="transparencia-sjc-back" type="462c0819:PsiDirectoryNode" />
               <item name="transparencia_api" type="462c0819:PsiDirectoryNode" />
-              <item name="cargo" type="462c0819:PsiDirectoryNode" />
+              <item name="salario_camara_municipal" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="transparencia-sjc-back" type="b2602c69:ProjectViewProjectNode" />
               <item name="transparencia-sjc-back" type="462c0819:PsiDirectoryNode" />
               <item name="transparencia_api" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="transparencia-sjc-back" type="b2602c69:ProjectViewProjectNode" />
-              <item name="transparencia-sjc-back" type="462c0819:PsiDirectoryNode" />
-              <item name="transparencia_api" type="462c0819:PsiDirectoryNode" />
-              <item name="crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="remuneracao_camara" type="462c0819:PsiDirectoryNode" />
+              <item name="salario_camara_municipal" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -254,20 +251,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests in remuneracao_camara_model_test.py">
-    <configuration name="Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_string_com_numeros" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.api">
+    <configuration name="api" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="camara-salario-sjc-back" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/commons" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transparencia_api" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;number_utils_test.NumberUnitTest.testa_se_converte_string_com_numeros&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/transparencia_api/api.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_date_nao_lanca_excecao" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <module name="camara-salario-sjc-back" />
@@ -326,19 +327,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_string_com_numeros" />
       <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_salario_camara_municipal_nao_lanca_excecao" />
       <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_date_nao_lanca_excecao" />
       <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_funcionario_publico_nao_lanca_excecao" />
       <item itemvalue="Python tests.Nosetests in remuneracao_camara_model_test.py" />
+      <item itemvalue="Python.api" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.api" />
         <item itemvalue="Python tests.Nosetests in remuneracao_camara_model_test.py" />
         <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_funcionario_publico_nao_lanca_excecao" />
         <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_date_nao_lanca_excecao" />
         <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_salario_camara_municipal_nao_lanca_excecao" />
-        <item itemvalue="Python tests.Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_string_com_numeros" />
       </list>
     </recent_temporary>
   </component>
@@ -356,12 +357,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_for_number_utils_test_NumberUnitTest_testa_se_converte_para_float - 2018.04.30 at 22h 02m 28s.xml">
-      <configuration name="Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_para_float" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Nosetests_for_number_utils_test_NumberUnitTest_testa_se_converte_para_float - 2018.04.30 at 22h 02m 56s.xml">
-      <configuration name="Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_para_float" configurationId="tests" />
-    </history-entry>
     <history-entry file="Nosetests_for_number_utils_test_NumberUnitTest_testa_se_converte_string_com_numeros - 2018.04.30 at 22h 04m 10s.xml">
       <configuration name="Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_string_com_numeros" configurationId="tests" />
     </history-entry>
@@ -386,64 +381,55 @@
     <history-entry file="Nosetests_in_remuneracao_camara_model_test_py - 2018.04.30 at 23h 07m 58s.xml">
       <configuration name="Nosetests in remuneracao_camara_model_test.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Nosetests_in_remuneracao_camara_model_test_py - 2018.05.01 at 10h 23m 45s.xml">
+      <configuration name="Nosetests in remuneracao_camara_model_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_remuneracao_camara_model_test_py - 2018.05.01 at 10h 32m 35s.xml">
+      <configuration name="Nosetests in remuneracao_camara_model_test.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="1920" height="1082" extended-state="7" />
+    <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2228145" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2249467" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32914045" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.32809225" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49520257" visible="true" weight="0.32809225" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.32809225" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.50479746" side_tool="true" visible="true" weight="0.32809225" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.39937106" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.39937106" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2228145" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" visible="true" weight="0.32809225" />
       <window_info anchor="bottom" id="Inspection Results" order="10" sideWeight="0.49946696" weight="0.32914045" />
+      <window_info anchor="right" id="R Packages" order="4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.39937106" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32914045" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978678" weight="0.32809225" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.32809225" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/transparencia_api/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/salario_camara_municipal/model/salario_camara_municipal_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/salario_camara_municipal/controller/salario_camara_municipal_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_repository.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -617,38 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_controller.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_repository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setembro2017.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_database_updater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -673,24 +631,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/salario_camara_municipal/model/salario_camara_municipal_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/cargo/repository/cargo_repository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -705,46 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/commons/database_communication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -752,6 +656,128 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/salario_camara_municipal/model/salario_camara_municipal_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="108" lean-forward="true" selection-start-column="108" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_controller.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="489">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/commons/database_communication.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-208">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/cargo/repository/cargo_repository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/cargo/repository/cargo_storage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_repository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/crawler/remuneracao_camara/remuneracao_camara_database_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/funcionario_publico/repository/funcionario_publico_sotage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/commons/database_defenition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="33" column="15" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transparencia_api/salario_camara_municipal/repository/salario_camara_municipal_storage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
