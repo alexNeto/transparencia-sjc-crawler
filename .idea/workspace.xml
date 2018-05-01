@@ -236,39 +236,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_date_nao_lanca_excecao">
-    <configuration name="api (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="camara-salario-sjc-back" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transparencia_api" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/transparencia_api/api.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_para_float" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <module name="camara-salario-sjc-back" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/commons" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;number_utils_test.NumberUnitTest.testa_se_converte_para_float&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Nosetests in remuneracao_camara_model_test.py">
     <configuration name="Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_string_com_numeros" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <module name="camara-salario-sjc-back" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -297,6 +265,20 @@
       <option name="_new_target" value="&quot;remuneracao_camara_model_test.NumberUnitTest.testa_se_set_date_nao_lanca_excecao&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
+    <configuration name="Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_funcionario_publico_nao_lanca_excecao" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <module name="camara-salario-sjc-back" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/crawler_test/remuneracao_camara" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;remuneracao_camara_model_test.NumberUnitTest.testa_se_set_funcionario_publico_nao_lanca_excecao&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
     <configuration name="Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_salario_camara_municipal_nao_lanca_excecao" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <module name="camara-salario-sjc-back" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -311,20 +293,34 @@
       <option name="_new_target" value="&quot;remuneracao_camara_model_test.NumberUnitTest.testa_se_set_salario_camara_municipal_nao_lanca_excecao&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
+    <configuration name="Nosetests in remuneracao_camara_model_test.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <module name="camara-salario-sjc-back" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/crawler_test/remuneracao_camara" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/crawler_test/remuneracao_camara/remuneracao_camara_model_test.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
     <list>
-      <item itemvalue="Python.api (2)" />
-      <item itemvalue="Python tests.Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_para_float" />
       <item itemvalue="Python tests.Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_string_com_numeros" />
       <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_salario_camara_municipal_nao_lanca_excecao" />
       <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_date_nao_lanca_excecao" />
+      <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_funcionario_publico_nao_lanca_excecao" />
+      <item itemvalue="Python tests.Nosetests in remuneracao_camara_model_test.py" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Nosetests in remuneracao_camara_model_test.py" />
+        <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_funcionario_publico_nao_lanca_excecao" />
         <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_date_nao_lanca_excecao" />
         <item itemvalue="Python tests.Nosetests for remuneracao_camara_model_test.NumberUnitTest.testa_se_set_salario_camara_municipal_nao_lanca_excecao" />
         <item itemvalue="Python tests.Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_string_com_numeros" />
-        <item itemvalue="Python tests.Nosetests for number_utils_test.NumberUnitTest.testa_se_converte_para_float" />
-        <item itemvalue="Python.api (2)" />
       </list>
     </recent_temporary>
   </component>

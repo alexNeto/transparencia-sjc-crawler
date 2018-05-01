@@ -50,10 +50,10 @@ class RemuneracaoCamaraModel:
         self.__salario_camara_municipal.salario_liquido = to_float(data[13])
         return "done"
 
-    def set_funcionario_publico(self, data, date_id, cargo_id, dado_salario_id):
-        self.__funcionario_publico.date_id = date_id
-        self.__funcionario_publico.cargo_id = cargo_id
-        self.__funcionario_publico.dado_salario_id = dado_salario_id
+    def set_funcionario_publico(self, data, ids):
+        self.__funcionario_publico.date_id = ids[0]
+        self.__funcionario_publico.cargo_id = ids[1]
+        self.__funcionario_publico.dado_salario_id = ids[2]
         self.__funcionario_publico.nome = data[0]
         return "done"
 
