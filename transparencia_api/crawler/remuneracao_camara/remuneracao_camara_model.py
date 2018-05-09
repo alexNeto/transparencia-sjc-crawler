@@ -8,6 +8,7 @@ class RemuneracaoCamaraModel:
         self.__data_set = RemuneracaoCamaraCrawler()
         self.__date = None
         self.__data = None
+        self.__cargos = []
 
     def split_data_set(self):
         splited_data = self.__data_set.get_data().strip(' ').strip('\n').split('\n\n\n')
@@ -41,13 +42,19 @@ class RemuneracaoCamaraModel:
 
     def get_data(self):
         self.split_data_set()
-        dataTratada = []
+        data_tratada = []
         for item in self.__data:
-            dataTratada.append(self.convert_string_to_float(item))
-        return dataTratada
+            if item[1] not in self.__cargos:
+                self.__cargos.append(item[1])
+            data_tratada.append(self.convert_string_to_float(item))
+        return data_tratada
+
+    def get_cargos(self):
+        return self.__cargos
 
     def get_dados_raspados(self):
         return {
             "date": self.get_date(),
-            "info": self.get_data()
+            "cargos": self.get_cargos(),
+            "funcionario": self.get_data()
         }
