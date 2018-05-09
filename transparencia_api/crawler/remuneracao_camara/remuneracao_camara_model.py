@@ -1,4 +1,5 @@
 from transparencia_api.commons.number_utils import to_float
+from transparencia_api.commons.date_utils import converte_mes
 from transparencia_api.crawler.remuneracao_camara.remuneracao_camara_crawler import RemuneracaoCamaraCrawler
 
 
@@ -17,7 +18,11 @@ class RemuneracaoCamaraModel:
         return dados_individuais
 
     def get_date(self):
-        return self.__data_set.get_date()
+        data_separada = self.__data_set.get_date().split(" ")
+        return {
+            "mes": converte_mes(data_separada[0]),
+            "ano": int(data_separada[2])
+        }
 
     def convert_string_to_float(self, data):
         data[2] = to_float(data[2])

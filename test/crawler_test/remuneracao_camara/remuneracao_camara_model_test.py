@@ -14,8 +14,8 @@ class RemuneracaoCamaraModelTest(unittest.TestCase):
         self.assertTrue(self.remuneracaoModel.split_data_set().__len__() > 100)
 
     def testa_se_raspa_data(self):
-        dataSeprada = self.remuneracaoModel.get_date().split(" ")
-        self.assertEqual(3, dataSeprada.__len__())
+        data_seprada = self.remuneracaoModel.get_date()
+        self.assertEqual(2, data_seprada.__len__())
 
     def testa_se_converte_de_string_para_float(self):
         self.assertEqual(0.00, self.remuneracaoModel.convert_string_to_float(self.dado)[5])

@@ -1,4 +1,5 @@
 import unittest
+
 from transparencia_api.commons import number_utils
 
 
