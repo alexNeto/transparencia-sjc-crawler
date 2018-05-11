@@ -25,20 +25,23 @@ class RemuneracaoCamaraModel:
             "ano": int(data_separada[2])
         }
 
-    def convert_string_to_float(self, data):
-        data[2] = to_float(data[2])
-        data[3] = to_float(data[3])
-        data[4] = to_float(data[4])
-        data[5] = to_float(data[5])
-        data[6] = to_float(data[6])
-        data[7] = to_float(data[7])
-        data[8] = to_float(data[8])
-        data[9] = to_float(data[9])
-        data[10] = to_float(data[10])
-        data[11] = to_float(data[11])
-        data[12] = to_float(data[12])
-        data[13] = to_float(data[13])
-        return data
+    def prepare_dto(self, data):
+        return {
+            "nome": data[0],
+            "cargo": data[1],
+            "salario_base": to_float(data[2]),
+            "plano_carreira": to_float(data[3]),
+            "gratificacao": to_float(data[4]),
+            "beneficio": to_float(data[5]),
+            "abono": to_float(data[6]),
+            "adiantamento": to_float(data[7]),
+            "ferias": to_float(data[8]),
+            "decimo_terceiro": to_float(data[9]),
+            "abatimento": to_float(data[10]),
+            "descontos": to_float(data[11]),
+            "salario_bruto": to_float(data[12]),
+            "salario_liquido": to_float(data[13])
+        }
 
     def get_data(self):
         self.split_data_set()
@@ -46,7 +49,7 @@ class RemuneracaoCamaraModel:
         for item in self.__data:
             if item[1] not in self.__cargos:
                 self.__cargos.append(item[1])
-            data_tratada.append(self.convert_string_to_float(item))
+            data_tratada.append(self.prepare_dto(item))
         return data_tratada
 
     def get_cargos(self):
