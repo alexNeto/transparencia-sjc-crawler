@@ -18,7 +18,8 @@ class RemuneracaoCamaraModelTest(unittest.TestCase):
         self.assertEqual(2, data_seprada.__len__())
 
     def testa_se_converte_de_string_para_float(self):
-        self.assertEqual(0.00, self.remuneracaoModel.convert_string_to_float(self.dado)[5])
+        print(self.remuneracaoModel.prepare_dto(self.dado))
+        self.assertEqual(0.00, self.remuneracaoModel.prepare_dto(self.dado)["ferias"])
 
     def testa_se_pega_e_converte_dados_raspados(self):
         self.assertTrue(isinstance(self.remuneracaoModel.get_data(), list))
@@ -26,5 +27,6 @@ class RemuneracaoCamaraModelTest(unittest.TestCase):
     def testa_se_returna_formato_correto(self):
         dados = self.remuneracaoModel.get_dados_raspados()
         date = dados["date"]
-        info = dados["info"]
-        self.assertTrue(date and info)
+        cargos = dados["cargos"]
+        funcionarios = dados["funcionario"]
+        self.assertTrue(date and cargos and funcionarios)
