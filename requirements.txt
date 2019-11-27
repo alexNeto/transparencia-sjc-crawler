@@ -7,4 +7,4 @@ Jinja2==2.10
 lxml==4.1.1
 numpy==1.13.3
 virtualenv==15.1.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
