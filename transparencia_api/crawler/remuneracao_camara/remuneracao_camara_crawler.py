@@ -1,14 +1,11 @@
-from urllib.request import urlopen
+import requests
 from bs4 import BeautifulSoup
 
 
 class RemuneracaoCamaraCrawler:
+
     def __init__(self):
-        self.html = urlopen(
-            "http://portal.camarasjc.sp.gov.br:8080/"
-            "cmsjc/websis/portal_transparencia/financeiro/contas_publicas/"
-            "index.php?consulta=../lei_acesso/lai_remuneracoes")
-        self.target = BeautifulSoup(self.html, "html.parser")
+        self.target = ""
 
     def get_data(self):
         return self.target.find("tbody").getText()
@@ -17,3 +14,12 @@ class RemuneracaoCamaraCrawler:
         data = self.target.find("h5").getText()
         data = data[20:]
         return data
+
+    def make_request(self, date):
+        response = requests.post(
+            "http://portal.camarasjc.sp.gov.br:8080"
+            "/cmsjc/websis/portal_transparencia/financeiro/contas_publicas/"
+            "index.php?consulta=../lei_acesso/lai_remuneracoes",
+            data={'competencia': date})
+
+        self.target = BeautifulSoup(response.text, "html.parser")

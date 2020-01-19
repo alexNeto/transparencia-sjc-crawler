@@ -55,7 +55,7 @@ CORS(app)
 api.add_resource(Index, '/')
 
 # salario camara municipal
-api.add_resource(RemuneracaoCamaraCotroller, '/salario_camara_municipal')
+api.add_resource(RemuneracaoCamaraCotroller, '/salario_camara_municipal', '/salario_camara_municipal/<string:date>')
 
 if __name__ == '__main__':
     app.run(debug=True)

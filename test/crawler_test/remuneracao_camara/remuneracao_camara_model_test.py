@@ -1,4 +1,3 @@
-import types
 import unittest
 
 from transparencia_api.crawler.remuneracao_camara.remuneracao_camara_model import RemuneracaoCamaraModel

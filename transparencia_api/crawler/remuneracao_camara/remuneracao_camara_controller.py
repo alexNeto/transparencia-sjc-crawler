@@ -12,5 +12,5 @@ class RemuneracaoCamaraCotroller(Resource):
     def __init__(self):
         self.remuneracao_camara_municial = RemuneracaoCamaraModel()
 
-    def get(self):
-        return self.remuneracao_camara_municial.get_dados_raspados()
+    def get(self, date=None):
+        return self.remuneracao_camara_municial.get_dados_raspados(date)

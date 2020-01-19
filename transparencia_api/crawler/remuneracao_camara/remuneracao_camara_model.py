@@ -1,5 +1,5 @@
+from transparencia_api.commons.date_utils import converte_mes, month_year
 from transparencia_api.commons.number_utils import to_float
-from transparencia_api.commons.date_utils import converte_mes
 from transparencia_api.crawler.remuneracao_camara.remuneracao_camara_crawler import RemuneracaoCamaraCrawler
 
 
@@ -10,7 +10,8 @@ class RemuneracaoCamaraModel:
         self.__data = None
         self.__cargos = []
 
-    def split_data_set(self):
+    def split_data_set(self, date=None):
+        self.__data_set.make_request(month_year(date))
         splited_data = self.__data_set.get_data().strip(' ').strip('\n').split('\n\n\n')
         dados_individuais = []
         for individuo in splited_data:
@@ -18,7 +19,8 @@ class RemuneracaoCamaraModel:
         self.__data = dados_individuais
         return dados_individuais
 
-    def get_date(self):
+    def get_date(self, date=None):
+        self.__data_set.make_request(month_year(date))
         data_separada = self.__data_set.get_date().split(" ")
         return {
             "mes": converte_mes(data_separada[0]),
@@ -43,8 +45,8 @@ class RemuneracaoCamaraModel:
             "salario_liquido": to_float(data[13])
         }
 
-    def get_data(self):
-        self.split_data_set()
+    def get_data(self, date=None):
+        self.split_data_set(date)
         data_tratada = []
         for item in self.__data:
             if item[1] not in self.__cargos:
@@ -52,10 +54,12 @@ class RemuneracaoCamaraModel:
             data_tratada.append(self.prepare_dto(item))
         return data_tratada
 
-    def get_cargos(self):
+    def get_cargos(self, date=None):
+        self.__data_set.make_request(month_year(date))
         return self.__cargos
 
-    def get_dados_raspados(self):
+    def get_dados_raspados(self, date=None):
+        self.__data_set.make_request(month_year(date))
         return {
             "date": self.get_date(),
             "cargos": self.get_cargos(),
